@@ -1,0 +1,67 @@
+.area {
+  .temp {
+    display: none;
+  }
+
+  .frame {
+    margin-bottom: 20px !important;
+
+    .titletext {
+      font-size: 17px;
+      color: $color-grey;
+      line-height: 17px;
+      font-weight: 500;
+    }
+  }
+
+  .slideshow {
+    padding-right: 20px;
+
+    li {
+      height: 250px !important;
+      width: 100% !important;
+    }
+  }
+}
+
+.module {
+  ul {
+    li {
+      a, font {
+      }
+
+      height: 24px;
+      line-height: 24px;
+      font-size: 14px;
+      padding-left: 20px !important;
+    }
+  }
+}
+
+.panel-super {
+  border-top: 1px solid $color-light-grey-ss !important;
+  padding-top: 20px;
+
+  .title {
+    padding-left: 0px;
+  }
+
+  >div {
+    &:not(:first-child) {
+      padding-left: 30px;
+      border-left: 1px dashed $color-light-grey-ss !important;
+    }
+  }
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}

@@ -4955,13 +4955,7 @@ a.pnc {
 #scbar {
   background: #fbfbfb;
 }
-.chart em {
-  color: #333;
-}
-.chart .numbers {
-  font-family: Georgia;
-  font-size: 18px;
-}
+
 .pg {
   float: left;
 }
