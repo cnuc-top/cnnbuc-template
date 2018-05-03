@@ -54,26 +54,22 @@
   border-right: 1px solid #e5e5e5;
 }
 
-.fl_icn_g {
-  float: left;
-  width: 31px;
-}
-
 .fl_g {
   vertical-align: top;
 }
 
 .fl_g dl {
-  margin-left: 31px;
+  margin-left: 30px;
   padding-left: 10px;
 }
 
 .fl_g dt {
+  margin-top: 5px;
   font-weight: 700;
 }
 
 .fl_row td {
-  border-top: 1px dashed #cdcdcd;
+  padding: 30px 0;
 }
 
 .flt {
@@ -149,28 +145,21 @@
 }
 
 .fl .bm, #online.bm, #category_lk {
-  margin-bottom: 15px;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
+  margin-bottom: 20px;
   border-top-right-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
   border-top-left-radius: 3px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $color-light-grey-ss;
 }
 
-.bm .bm_h {
-  position: relative;
-  -webkit-border-top-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  border-top-right-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom: 1px solid #efefef;
-  border-top: 0;
-  background: url('http://cnnbuc.com/template/yunshan_aliyun/src/ext//tbg.gif'); // cnnbuc.com/template/yunshan_aliyun/src/ext//tbg.gif)
-  repeat-x: 0 0;
+.bm {
+  .bm_h {
+    position: relative;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid $color-light-grey-ss;
+    border-top: 0;
+    background: $color-light-grey-sss;
+  }
 }
 
 .bm .bm_h h2, .bm_h h3 {
@@ -182,10 +171,32 @@
 .fl .bm_h h2 a, .bm_h h3 a {
   color: #666;
   font-weight: 200;
+  font-size: 16px;
+}
+
+.fl_icn_g {
+  float: left;
+  width: 80px !important;
+
+  img {
+    width: 70px;
+  }
+}
+
+.fl_icn {
+  img {
+    width: 70px;
+  }
 }
 
 .fl .bm .bm_c h2 a, .fl .bm .bm_c dt a {
-  font-size: 16px;
+  font-size: 17px;
+  color: $color-grey;
+  transition: 0.15s;
+
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .fl .bm .bm_c .fl_i, .fl .bm .bm_c .fl_by, .fl .bm .bm_c dd {
