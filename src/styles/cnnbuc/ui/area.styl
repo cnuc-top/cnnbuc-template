@@ -1,4 +1,22 @@
 .area {
+  .xbs_1 {
+    border: none;
+
+    .dxb_bc {
+      padding: 0px;
+    }
+
+    .title {
+      color: $color-grey !important;
+      background: #FFF !important;
+      border: none;
+    }
+
+    .titletext {
+      color: $color-grey !important;
+    }
+  }
+
   .temp {
     display: none;
   }
@@ -14,12 +32,51 @@
     }
   }
 
-  .slideshow {
-    padding-right: 20px;
+  .slidebar {
+    text-align: center;
+    bottom: 10px !important;
+    left: 0px !important;
+    right: 0px !important;
+    top: auto !important;
+
+    ul {
+      margin: 0 auto;
+    }
 
     li {
-      height: 250px !important;
+      float: none;
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin: 0 2px;
+      border-radius: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      content: '';
+      font-size: 0px;
+
+      &.on {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  // 轮播
+  .slideshow {
+    li {
+      height: 255px !important;
       width: 100% !important;
+      padding-left: 0px !important;
+
+      img {
+        height: 255px !important;
+        width: 100% !important;
+      }
+
+      .title {
+        top: 0px !important;
+        color: #FFF !important;
+        background-color: rgba($color-grey, 0.6) !important;
+      }
     }
   }
 }
