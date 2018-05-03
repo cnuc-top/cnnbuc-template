@@ -1,0 +1,60 @@
+$nav-height = 44px;
+#nv {
+  overflow: hidden;
+  height: $nav-height;
+  background: $color-primary;
+
+  li {
+    float: left;
+    font-weight: 500;
+    transition: 0.15s;
+    height: $nav-height;
+    line-height: $nav-height;
+
+    a {
+      font-size: 15px;
+      float: left;
+      height: $nav-height;
+      line-height: $nav-height;
+      padding: 0 32px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background: rgba($color-grey, 0.4);
+    }
+
+    &.a {
+      background: $color-grey;
+    }
+  }
+}
+
+#nv li span {
+  display: none;
+}
+
+#nv li.a a {
+  color: #fff;
+}
+
+#qmenu {
+  float: right;
+  display: inline;
+  margin: 10px 8px 0;
+  padding-right: 10px;
+  width: 103px;
+  height: 24px;
+  background: url('http://cnnbuc.com/template/yunshan_aliyun/src/common//qmenu.png'); // cnnbuc.com/template/yunshan_aliyun/src/common//qmenu.png)
+  no-repeat: 0 0;
+  line-height: 24px;
+  text-align: center;
+  color: #333;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#qmenu:hover {
+  text-decoration: none;
+}
